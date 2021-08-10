@@ -1,19 +1,20 @@
 from os import lchown
-from setuptools import setup
+import setuptools
 
 
 with open("README.md", 'r', encoding='utf-8') as fh:
     long_description = fh.read()
 
-setup(
+setuptools.setup(
     name='buser-xml-to-dict',
     author='Abraao Barros Lacerda',
     author_email='abraao.lacerda@buser.com.br', 
-    version='0.0.4',
+    version='0.0.1',
     description='Simple lib to handle with xml like a dictionary',
     long_description=long_description,
     py_modules=["xml-to-dict"],
     package_dir={'':'src'},
+    packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
     classifier=[
         "Programming Language :: Python :: 3",  
