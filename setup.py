@@ -9,7 +9,7 @@ setuptools.setup(
     name='buser-xml-to-dict',
     author='Abraao Barros Lacerda',
     author_email='abraao.lacerda@buser.com.br', 
-    version='0.0.1',
+    version='0.0.6',
     description='Simple lib to handle with xml like a dictionary',
     long_description=long_description,
     py_modules=["xml-to-dict"],
